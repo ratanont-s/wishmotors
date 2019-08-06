@@ -1,0 +1,19 @@
+#banner {
+    .banner {
+        &-slide {
+            .slick {
+                &-arrow {
+                    z-index: 1;
+                }
+
+                &-prev {
+                    left: 15%;
+                }
+
+                &-next {
+                    right: 15%;
+                }
+            }
+        }
+    }
+}
