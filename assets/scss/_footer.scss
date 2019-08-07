@@ -1,0 +1,78 @@
+footer {
+    .footer {
+        &-title {
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        &-about {
+            .list-address {
+                font-weight: 400;
+                font-size: small;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                }
+
+                &-icon {
+                    min-width: 80px;
+                    text-align: center;
+                }
+            }
+
+            .input-group {
+                .form-control {
+                    border-radius: 0;
+                    background-color: #929292;
+                    border-color: #929292;
+                    color: white;
+
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+
+                &-append {
+                    .btn {
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+
+        &-copyright {
+            .nav {
+                &-link {
+                    color: $light;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    &.active {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    // Mobile
+    @include media-breakpoint-down(md) {
+        .footer {
+            &-copyright {
+                font-size: 12px;
+
+                .nav {
+                    margin-bottom: 1rem;
+
+                    &-link {
+                        padding-top: 0.25rem;
+                        padding-bottom: 0.25rem;
+                    }
+                }
+            }
+        }
+    }
+}

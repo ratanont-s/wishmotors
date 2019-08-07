@@ -1,7 +1,7 @@
 // Color
-$primary:#df3636;
+$primary:#ED1B24;
 $secondary:#cecece;
-$light:#f2f2f2;
+$light:#F2F2F2;
 $dark:#040404;
 
 // Button
@@ -13,7 +13,11 @@ $btn-padding-x-sm:1rem;
 $font-family-base:'Prompt',
 sans-serif;
 $font-weight-base:300;
+$enable-responsive-font-sizes: true;
 
 // Slick
 $slick-font-path: '../scss/slick/fonts/';
 $slick-loader-path: '../scss/slick/';
+
+// Body
+$body-bg:$light;

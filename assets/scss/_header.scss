@@ -17,5 +17,76 @@ header {
             }
         }
 
+        &-bottom {
+            position: relative;
+        }
+
+        &-welcome {
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: -60px;
+                width: 500%;
+                height: 100%;
+                background-color: $primary;
+                transform: skew(35deg);
+            }
+
+            span {
+                position: relative;
+                color: white;
+                font-weight: 500;
+                font-size: 1.125rem;
+            }
+        }
+
+        &-menu {
+            .nav {
+                &-link {
+                    color: $body-color;
+                    font-size: 1.125rem;
+                    padding: .75rem 1rem;
+
+                    &:hover {
+                        color: $primary;
+                    }
+
+                    &.active {
+                        font-weight: 500;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        &-toggler {
+            border-radius: 0;
+            padding: .5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    // Mobile
+    @include media-breakpoint-down(md) {
+
+        .navbar {
+            &-brand {
+                margin-right: 0;
+
+                img {
+                    max-height: 34px;
+                }
+            }
+        }
     }
 }
