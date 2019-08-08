@@ -30,4 +30,12 @@ $(function () {
             }
         }]
     });
+
+    // Specials
+    $('#specials .specials-slide').slick({
+        autoplay: true,
+        slidesToShow: 3,
+        dots: true,
+        arrows: false,
+    });
 });

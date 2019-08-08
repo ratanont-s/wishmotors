@@ -142,3 +142,309 @@
         }
     }
 }
+
+#newCar {
+    background-color: white;
+    padding: 60px 0;
+
+    .card {
+        border-width: 0;
+        background-color: transparent;
+
+        &-img {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0;
+
+            img {
+                height: 195px;
+                width: 100%;
+                object-fit: cover;
+                @include transition($transition-base);
+            }
+        }
+
+        &-price {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: white;
+            padding: 0.5rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: -1rem;
+                width: 80%;
+                height: 100%;
+                background-color: rgba($primary, .77);
+                transform: skew(35deg);
+            }
+
+            span {
+                position: relative;
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+        }
+
+        &-body {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &-title {
+            color: $primary;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        &-subtitle {
+            font-size: 1.125rem;
+            color: $text-muted;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        &-year {
+            font-weight: 400;
+            color: $body-color;
+            font-size: 1.125rem;
+
+            img {
+                vertical-align: inherit;
+            }
+        }
+
+        &:hover {
+
+            .card-img {
+                img {
+                    transform: scale(1.1) rotate(5deg);
+                    @include transition($transition-base);
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .card {
+            &-img {
+                img {
+                    height: 130px;
+                }
+            }
+
+            &-price {
+                padding: 0 .5rem;
+
+                &::before {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+#specials {
+    padding: 60px 0;
+    background-color: $secondary;
+
+    .specials {
+        &-slide {
+            &-item {
+                position: relative;
+                overflow: hidden;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 60%;
+                    @include gradient-y($start-color: rgba(black, 0), $end-color: rgba(black, .8), $start-percent: 0%, $end-percent: 100%);
+                    z-index: 1;
+                }
+
+                .content {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 30px;
+                    right: 30px;
+                    color: white;
+                    line-height: 1.2;
+                    z-index: 2;
+
+                    &-title {
+                        @include rfs(30);
+                    }
+
+                    &-price {
+                        @include rfs(42);
+                        font-weight: 600;
+                    }
+
+                    &-time {
+                        @include rfs(18);
+
+                        img {
+                            width: auto;
+                            display: inline-block;
+                            vertical-align: inherit;
+                        }
+                    }
+                }
+
+                &:hover {
+                    @include transition($transition-base);
+
+                    .specials-slide-img {
+                        transform: scale(1.1) rotate(5deg);
+                        @include transition($transition-base);
+                    }
+                }
+            }
+
+            &-img {
+                width: 100%;
+                height: 528px;
+                object-fit: cover;
+                @include transition($transition-base);
+                z-index: 0;
+            }
+        }
+    }
+}
+
+#testimonial {
+    padding: 60px 0;
+    background-color: white;
+
+    .card {
+        border-width: 0;
+        background-color: transparent;
+
+        &-img {
+            border-radius: 0;
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            @include transition($transition-base);
+        }
+
+        &-body {
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+        }
+
+        &-title {
+            color: $primary;
+        }
+
+        &-text {
+            color: $text-muted;
+        }
+
+        &:hover {
+            .card-img {
+                transform: scale(1.05);
+                @include transition($transition-base);
+            }
+        }
+    }
+}
+
+#news {
+    padding: 0 0 60px;
+    background-color: white;
+
+    .card {
+        border-width: 0;
+        background-color: transparent;
+
+        &-img {
+            border-radius: 0;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                @include transition($transition-base);
+            }
+        }
+
+        &-tag {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: white;
+            padding: 0.5rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: -1rem;
+                width: 60%;
+                height: 100%;
+                background-color: rgba($primary, .77);
+                transform: skew(35deg);
+            }
+
+            span {
+                position: relative;
+                @include rfs(24);
+                font-weight: 500;
+            }
+        }
+
+        &-body {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &-title {
+            color: $primary;
+        }
+
+        &-text {
+            color: $text-muted;
+        }
+
+        &:hover {
+            .card-img {
+                img {
+                    transform: scale(1.05) rotate(3deg);
+                    @include transition($transition-base);
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .card {
+            &-img {
+                img {
+                    height: 225px;
+                }
+            }
+
+            &-tag {
+                padding: 0 .5rem;
+
+                &::before {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
