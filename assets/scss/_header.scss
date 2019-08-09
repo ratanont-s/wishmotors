@@ -1,21 +1,22 @@
 header {
-    .header {
-        &-topbar {
-            .input-group {
-                .form-control {
-                    border-radius: 0;
-                }
+    .form-search {
+        .input-group {
+            .form-control {
+                border-radius: 0;
+            }
 
-                &-append {
-                    .btn {
-                        background-color: $input-bg;
-                        border-color: $input-border-color;
-                        border-left-width: 0;
-                        border-radius: 0;
-                    }
+            &-append {
+                .btn {
+                    border-radius: 0;
+                    background-color: $input-bg;
+                    border-color: $input-border-color;
+                    border-left: 0;
                 }
             }
         }
+    }
+
+    .header {
 
         &-bottom {
             position: relative;
@@ -31,7 +32,7 @@ header {
                 content: '';
                 position: absolute;
                 top: 0;
-                right: -60px;
+                right: 0;
                 width: 500%;
                 height: 100%;
                 background-color: $primary;
@@ -60,6 +61,18 @@ header {
                     &.active {
                         font-weight: 500;
                         color: $primary;
+                    }
+                }
+            }
+
+            // Mobile
+            @include media-breakpoint-down(md) {
+                .nav {
+                    flex-direction: column;
+
+                    &-link {
+                        padding-left: 0;
+                        padding-right: 0;
                     }
                 }
             }

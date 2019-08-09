@@ -1,3 +1,113 @@
+section {
+    .section-title {
+        text-align: center;
+        text-transform: uppercase;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+
+            span {
+                flex-shrink: 1;
+                padding: 0 1rem;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        p {
+            color: $text-muted;
+            font-weight: 500;
+            @include rfs(18);
+            letter-spacing: 7.2px;
+        }
+
+        // Mobile
+        @include media-breakpoint-down(md) {
+            p {
+                font-size: 14px;
+                letter-spacing: 5px;
+            }
+        }
+    }
+
+    .slide {
+        &-nav {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .5rem 0;
+
+            .slick {
+                &-arrow {
+                    position: static;
+                    top: unset;
+                    transform: unset;
+
+                    &::before {
+                        display: none;
+                    }
+
+                }
+
+                &-prev {
+                    background: url('../images/icon-arrow-prev.png') no-repeat center center;
+                    background-size: contain;
+                }
+
+                &-next {
+                    background: url('../images/icon-arrow-next.png') no-repeat center center;
+                    background-size: contain;
+                }
+            }
+        }
+
+        &-dots {
+            position: relative;
+            padding: 0 1.5rem;
+
+            .slick-dots {
+                position: static;
+                bottom: unset;
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin: 0;
+                    width: 11px;
+                    height: 11px;
+
+                    &:not(:last-child) {
+                        margin-right: 12px;
+                    }
+
+                    &.slick-active button {
+                        background-color: $primary;
+                        border-color: $primary;
+                    }
+
+                    button {
+                        width: 100%;
+                        height: 100%;
+                        padding: 0;
+                        border: 1px solid $body-color;
+
+
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 #banner {
     .banner {
         &-slide {
@@ -7,13 +117,31 @@
                     top: 50%;
                     transform: translateY(-50%);
                     z-index: 1;
+                    width: 50px;
+                    height: 50px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    @include transition($transition-base);
 
                     &-prev {
                         left: 15%;
+                        background-image: url('../images/arrow-prev.png');
+
+                        &:hover {
+                            background-image: url('../images/arrow-prev-hover.png');
+                            @include transition($transition-base);
+                        }
                     }
 
                     &-next {
                         right: 15%;
+                        background-image: url('../images/arrow-next.png');
+
+                        &:hover {
+                            background-image: url('../images/arrow-next-hover.png');
+                            @include transition($transition-base);
+                        }
                     }
                 }
 
@@ -23,11 +151,30 @@
 
     // Mobile
     @include media-breakpoint-down(md) {
-        .banner-slide-item {
-            img {
-                min-height: 320px;
-                width: auto;
-                object-fit: cover;
+        .banner-slide {
+
+            &-item {
+                img {
+                    min-height: 320px;
+                    width: auto;
+                    object-fit: cover;
+                }
+            }
+
+            .slick {
+                &-arrow {
+                    width: 30px;
+                    height: 30px;
+
+                    &-prev {
+                        left: 1rem;
+                    }
+
+                    &-next {
+                        right: 1rem;
+                    }
+                }
+
             }
         }
     }
@@ -125,8 +272,12 @@
 }
 
 #brand {
+    padding-bottom: 60px;
+
     .brand {
         &-slide {
+            margin-bottom: 0;
+
             .slick {
                 &-track {
                     display: flex;
@@ -139,6 +290,8 @@
                     }
                 }
             }
+
+
         }
     }
 }
@@ -216,7 +369,7 @@
             font-size: 1.125rem;
 
             img {
-                vertical-align: inherit;
+                vertical-align: middle;
             }
         }
 
@@ -224,7 +377,7 @@
 
             .card-img {
                 img {
-                    transform: scale(1.1) rotate(5deg);
+                    transform: scale(1.1);
                     @include transition($transition-base);
                 }
             }
@@ -232,6 +385,17 @@
     }
 
     @include media-breakpoint-down(md) {
+        .row {
+            margin-right: -6px;
+            margin-left: -6px;
+
+            >.col,
+            >[class*="col-"] {
+                padding-right: 6px;
+                padding-left: 6px;
+            }
+        }
+
         .card {
             &-img {
                 img {
@@ -266,8 +430,8 @@
                     bottom: 0;
                     left: 0;
                     right: 0;
-                    height: 60%;
-                    @include gradient-y($start-color: rgba(black, 0), $end-color: rgba(black, .8), $start-percent: 0%, $end-percent: 100%);
+                    height: 70%;
+                    @include gradient-y($start-color: rgba($dark, 0), $end-color: rgba($dark, .9), $start-percent: 0%, $end-percent: 100%);
                     z-index: 1;
                 }
 
@@ -295,7 +459,7 @@
                         img {
                             width: auto;
                             display: inline-block;
-                            vertical-align: inherit;
+                            vertical-align: middle;
                         }
                     }
                 }
@@ -304,7 +468,7 @@
                     @include transition($transition-base);
 
                     .specials-slide-img {
-                        transform: scale(1.1) rotate(5deg);
+                        transform: scale(1.1);
                         @include transition($transition-base);
                     }
                 }
@@ -317,6 +481,14 @@
                 @include transition($transition-base);
                 z-index: 0;
             }
+        }
+    }
+
+    // Mobile
+    @include media-breakpoint-down(md) {
+        .specials-slide-item .content {
+            left: 1rem;
+            right: 1rem;
         }
     }
 }
@@ -367,6 +539,7 @@
     .card {
         border-width: 0;
         background-color: transparent;
+        margin-bottom: 1.5rem;
 
         &-img {
             border-radius: 0;
@@ -420,10 +593,25 @@
             color: $text-muted;
         }
 
+        &-footer {
+            background-color: transparent;
+            padding: 0;
+            border-top-width: 0;
+            display: flex;
+            align-items: center;
+            @include rfs(18);
+            font-weight: 400;
+            color: $body-color;
+        }
+
+        &-date {
+            margin-right: 1.25rem;
+        }
+
         &:hover {
             .card-img {
                 img {
-                    transform: scale(1.05) rotate(3deg);
+                    transform: scale(1.05);
                     @include transition($transition-base);
                 }
             }

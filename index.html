@@ -14,7 +14,7 @@
 
     <!-- Header -->
     <header class="shadow-sm sticky-top">
-        <div class="navbar-top bg-light py-2 d-none d-lg-block">
+        <!-- <div class="navbar-top bg-light py-2 d-none d-lg-block">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col">
@@ -22,21 +22,23 @@
                             @wish9</span>
                     </div>
                     <div class="col-auto">
-                        <form action="./index.html" class="row">
+                        <div class="row">
                             <div class="col">
-                                <div class="input-group input-group-sm">
-                                    <input type="text" class="form-control" placeholder="ค้นหารถ...">
-                                    <div class="input-group-append">
-                                        <button class="btn" type="submit">
-                                            <img src="./assets/images/icon-search.png" alt="" class="img-fluid">
-                                        </button>
+                                <form action="./index.html" class="form-search">
+                                    <div class="input-group input-group-sm">
+                                        <input type="text" class="form-control" placeholder="ค้นหารถ...">
+                                        <div class="input-group-append">
+                                            <button class="btn" type="submit">
+                                                <img src="./assets/images/icon-search.png" alt="" class="img-fluid">
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                             <div class="col-auto">
                                 <a href="#" class="btn btn-primary btn-sm rounded-0">ฝากขายรถออนไลน์</a>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,7 +53,9 @@
                     <img src="./assets/images/icon-toggler.png" alt="" class="img-fluid">
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -82,7 +86,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col">
-                        <form action="./index.html">
+                        <form action="./index.html" class="form-search">
                             <div class="input-group input-group-sm">
                                 <input type="text" class="form-control" placeholder="ค้นหารถ...">
                                 <div class="input-group-append">
@@ -110,9 +114,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <!-- <div class="header-topbar bg-light py-2">
+        <div class="header-topbar bg-light py-2 d-none d-lg-block">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col">
@@ -120,26 +124,28 @@
                             @wish9</span>
                     </div>
                     <div class="col-auto">
-                        <form action="./index.html" class="row">
+                        <div class="row">
                             <div class="col">
-                                <div class="input-group input-group-sm">
-                                    <input type="text" class="form-control" placeholder="ค้นหารถ...">
-                                    <div class="input-group-append">
-                                        <button class="btn" type="submit">
-                                            <img src="./assets/images/icon-search.png" alt="" class="img-fluid">
-                                        </button>
+                                <form action="./index.html" class="form-search">
+                                    <div class="input-group input-group-sm">
+                                        <input type="text" class="form-control" placeholder="ค้นหารถ...">
+                                        <div class="input-group-append">
+                                            <button class="btn" type="submit">
+                                                <img src="./assets/images/icon-search.png" alt="" class="img-fluid">
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                             <div class="col-auto">
                                 <a href="#" class="btn btn-primary btn-sm rounded-0">ฝากขายรถออนไลน์</a>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header-title bg-white py-4">
+        <div class="header-title bg-white py-2 py-lg-4">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col">
@@ -147,42 +153,51 @@
                             <img src="./assets/images/Logo.png" alt="" class="img-fluid">
                         </a>
                     </div>
-                    <div class="col-auto">
-                        <div class="d-flex align-items-center">
-                            <span class="mr-3">
-                                <img src="./assets/images/Icon-address.png" alt="" class="img-fluid">
-                            </span>
-                            <span>
-                                333/333 ถนนประดิษฐ์มนูธรรม <br>
-                                แขวง/เขต วังทองหลาง กรุงเทพ
-                            </span>
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-3">
+                                        <img src="./assets/images/Icon-address.png" alt="" class="img-fluid">
+                                    </span>
+                                    <span>
+                                        333/333 ถนนประดิษฐ์มนูธรรม <br>
+                                        แขวง/เขต วังทองหลาง กรุงเทพ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-3">
+                                        <img src="./assets/images/Icon-tel.png" alt="" class="img-fluid">
+                                    </span>
+                                    <span>
+                                        TEL: 02-530-1111 <br>
+                                        FAX: 02-530-6666
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-auto">
-                        <div class="d-flex align-items-center">
-                            <span class="mr-3">
-                                <img src="./assets/images/Icon-tel.png" alt="" class="img-fluid">
-                            </span>
-                            <span>
-                                TEL: 02-530-1111 <br>
-                                FAX: 02-530-6666
-                            </span>
-                        </div>
+                    <div class="col-auto d-lg-none">
+                        <button class="btn btn-outline-secondary px-2" type="button" id="btnToggleMenu">
+                            <img src="./assets/images/icon-toggler.png" alt="" class="img-fluid">
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header-bottom bg-light">
+        <div class="header-bottom bg-light py-2 py-lg-0">
             <div class="container">
                 <div class="row">
-                    <div class="col-auto d-none d-lg-block">
+                    <div class="col-lg d-none d-lg-block">
                         <div class="header-welcome">
                             <span>คิดถึงรถ คิดถึง วิชช์ มอเตอร์ส</span>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="header-menu">
-                            <ul class="nav justify-content-end">
+                    <div class="col-12 col-lg-auto">
+                        <div class="header-menu d-lg-block">
+                            <ul class="nav">
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#">หน้าแรก</a>
                                 </li>
@@ -205,8 +220,41 @@
                         </div>
                     </div>
                 </div>
+                <div class="row d-lg-none">
+                    <div class="col">
+                        <form action="./index.html" class="form-search">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="ค้นหารถ...">
+                                <div class="input-group-append">
+                                    <button class="btn" type="submit">
+                                        <img src="./assets/images/icon-search.png" alt="" class="img-fluid">
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row">
+                            <div class="col-auto">
+                                <a href="#">
+                                    <img src="./assets/images/line-logo.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-auto px-0">
+                                <a href="#">
+                                    <img src="./assets/images/Icon-tel.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#">
+                                    <img src="./assets/images/Icon-address.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div> -->
+        </div>
     </header>
 
     <!-- Main -->
@@ -342,8 +390,12 @@
         </section>
         <section id="brand">
             <div class="container">
-                <div class="section-title ">
-                    <h2>แบรนด์รถยนต์</h2>
+                <div class="section-title">
+                    <h2>
+                        <span><img src="./assets/images/line-title-left.png" alt=""></span>
+                        แบรนด์รถยนต์
+                        <span><img src="./assets/images/line-title-right.png" alt=""></span>
+                    </h2>
                     <p>Welcome to Wish motors</p>
                 </div>
                 <div class="brand-slide">
@@ -384,12 +436,19 @@
                         <img src="./assets/images/brand/hyundai.png" alt="Hyundai" class="img-fluid mx-auto">
                     </div>
                 </div>
+                <div id="brandSlideNav" class="slide-nav">
+                    <div id="brandSlideDots" class="slide-dots"></div>
+                </div>
             </div>
         </section>
         <section id="newCar">
             <div class="container">
                 <div class="section-title ">
-                    <h2>รถเข้าใหม่</h2>
+                    <h2>
+                        <span><img src="./assets/images/line-title-left.png" alt=""></span>
+                        รถเข้าใหม่
+                        <span><img src="./assets/images/line-title-right.png" alt=""></span>
+                    </h2>
                     <p>Welcome to Wish motors</p>
                 </div>
                 <div class="row">
@@ -405,7 +464,7 @@
                                 <h4 class="card-title">MERCEDES-BENZ C</h4>
                                 <p class="card-subtitle">W 204 (ปี08-14) AT C 200</p>
                                 <div class="card-year">
-                                    <img src="./assets/images/icon-year.png" alt="" class="img-fluid">
+                                    <img src="./assets/images/icon-time.png" alt="" class="img-fluid">
                                     ปี 2009
                                 </div>
                             </div>
@@ -414,17 +473,17 @@
                     <div class="col-6 col-lg-4 col-xl-3">
                         <a href="#" class="card">
                             <div class="card-img">
-                                <img src="./assets/images/new_cars/29936LM06032.jpg" alt="">
+                                <img src="./assets/images/new_cars/29936LM06022.jpg" alt="">
                                 <div class="card-price">
-                                    <span>฿ 709,000</span>
+                                    <span>฿ 736,000</span>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">MERCEDES-BENZ C</h4>
-                                <p class="card-subtitle">W 204 (ปี08-14) AT C 200</p>
+                                <h4 class="card-title">HONDA CITY</h4>
+                                <p class="card-subtitle">(08-14) AT i-VTEC 1.5 [EL]</p>
                                 <div class="card-year">
-                                    <img src="./assets/images/icon-year.png" alt="" class="img-fluid">
-                                    ปี 2009
+                                    <img src="./assets/images/icon-time.png" alt="" class="img-fluid">
+                                    ปี 2016
                                 </div>
                             </div>
                         </a>
@@ -432,17 +491,17 @@
                     <div class="col-6 col-lg-4 col-xl-3">
                         <a href="#" class="card">
                             <div class="card-img">
-                                <img src="./assets/images/new_cars/29936LM06032.jpg" alt="">
+                                <img src="./assets/images/new_cars/29936LL30042.jpg" alt="">
                                 <div class="card-price">
-                                    <span>฿ 709,000</span>
+                                    <span>฿ 225,000</span>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">MERCEDES-BENZ C</h4>
-                                <p class="card-subtitle">W 204 (ปี08-14) AT C 200</p>
+                                <h4 class="card-title">FORD FIESTA</h4>
+                                <p class="card-subtitle">(09-14) AT [5Dr] 1.6 Sport</p>
                                 <div class="card-year">
-                                    <img src="./assets/images/icon-year.png" alt="" class="img-fluid">
-                                    ปี 2009
+                                    <img src="./assets/images/icon-time.png" alt="" class="img-fluid">
+                                    ปี 2011
                                 </div>
                             </div>
                         </a>
@@ -450,17 +509,17 @@
                     <div class="col-6 col-lg-4 col-xl-3">
                         <a href="#" class="card">
                             <div class="card-img">
-                                <img src="./assets/images/new_cars/29936LM06032.jpg" alt="">
+                                <img src="./assets/images/new_cars/29936LL30062.jpg" alt="">
                                 <div class="card-price">
-                                    <span>฿ 709,000</span>
+                                    <span>฿ 499,000</span>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">MERCEDES-BENZ C</h4>
-                                <p class="card-subtitle">W 204 (ปี08-14) AT C 200</p>
+                                <h4 class="card-title">HONDA FREED</h4>
+                                <p class="card-subtitle">โฉมปี (10-14) AT 1.5 [E]</p>
                                 <div class="card-year">
-                                    <img src="./assets/images/icon-year.png" alt="" class="img-fluid">
-                                    ปี 2009
+                                    <img src="./assets/images/icon-time.png" alt="" class="img-fluid">
+                                    ปี 2012
                                 </div>
                             </div>
                         </a>
@@ -468,17 +527,17 @@
                     <div class="col-6 col-lg-4 col-xl-3">
                         <a href="#" class="card">
                             <div class="card-img">
-                                <img src="./assets/images/new_cars/29936LM06032.jpg" alt="">
+                                <img src="./assets/images/new_cars/29936LL30032.jpg" alt="">
                                 <div class="card-price">
-                                    <span>฿ 709,000</span>
+                                    <span>฿ 499,000</span>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">MERCEDES-BENZ C</h4>
-                                <p class="card-subtitle">W 204 (ปี08-14) AT C 200</p>
+                                <h4 class="card-title">HONDA CITY</h4>
+                                <p class="card-subtitle">โฉมปี (14-16) AT 1.5 [S]</p>
                                 <div class="card-year">
-                                    <img src="./assets/images/icon-year.png" alt="" class="img-fluid">
-                                    ปี 2009
+                                    <img src="./assets/images/icon-time.png" alt="" class="img-fluid">
+                                    ปี 2015
                                 </div>
                             </div>
                         </a>
@@ -486,17 +545,17 @@
                     <div class="col-6 col-lg-4 col-xl-3">
                         <a href="#" class="card">
                             <div class="card-img">
-                                <img src="./assets/images/new_cars/29936LM06032.jpg" alt="">
+                                <img src="./assets/images/new_cars/29936LM06012.jpg" alt="">
                                 <div class="card-price">
-                                    <span>฿ 709,000</span>
+                                    <span>฿ 499,000</span>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">MERCEDES-BENZ C</h4>
-                                <p class="card-subtitle">W 204 (ปี08-14) AT C 200</p>
+                                <h4 class="card-title">HONDA CITY</h4>
+                                <p class="card-subtitle">โฉมปี (14-16) AT 1.5 [S]</p>
                                 <div class="card-year">
-                                    <img src="./assets/images/icon-year.png" alt="" class="img-fluid">
-                                    ปี 2009
+                                    <img src="./assets/images/icon-time.png" alt="" class="img-fluid">
+                                    ปี 2015
                                 </div>
                             </div>
                         </a>
@@ -504,17 +563,17 @@
                     <div class="col-6 col-lg-4 col-xl-3">
                         <a href="#" class="card">
                             <div class="card-img">
-                                <img src="./assets/images/new_cars/29936LM06032.jpg" alt="">
+                                <img src="./assets/images/new_cars/29936LM06042.jpg" alt="">
                                 <div class="card-price">
-                                    <span>฿ 709,000</span>
+                                    <span>฿ 385,000</span>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">MERCEDES-BENZ C</h4>
-                                <p class="card-subtitle">W 204 (ปี08-14) AT C 200</p>
+                                <h4 class="card-title">HONDA JAZZ</h4>
+                                <p class="card-subtitle">โฉมปี (08-14) AT i-VTEC 1.5 [S]</p>
                                 <div class="card-year">
-                                    <img src="./assets/images/icon-year.png" alt="" class="img-fluid">
-                                    ปี 2009
+                                    <img src="./assets/images/icon-time.png" alt="" class="img-fluid">
+                                    ปี 2015
                                 </div>
                             </div>
                         </a>
@@ -522,17 +581,17 @@
                     <div class="col-6 col-lg-4 col-xl-3">
                         <a href="#" class="card">
                             <div class="card-img">
-                                <img src="./assets/images/new_cars/29936LM06032.jpg" alt="">
+                                <img src="./assets/images/new_cars/29936LL30052.jpg" alt="">
                                 <div class="card-price">
-                                    <span>฿ 709,000</span>
+                                    <span>฿ 499,000</span>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">MERCEDES-BENZ C</h4>
-                                <p class="card-subtitle">W 204 (ปี08-14) AT C 200</p>
+                                <h4 class="card-title">HONDA CITY</h4>
+                                <p class="card-subtitle">โฉมปี (08-14) AT i-VTEC 1.5 [V]</p>
                                 <div class="card-year">
-                                    <img src="./assets/images/icon-year.png" alt="" class="img-fluid">
-                                    ปี 2009
+                                    <img src="./assets/images/icon-time.png" alt="" class="img-fluid">
+                                    ปี 2015
                                 </div>
                             </div>
                         </a>
@@ -546,7 +605,11 @@
         <section id="specials">
             <div class="container">
                 <div class="section-title ">
-                    <h2>รถใหม่</h2>
+                    <h2>
+                        <span><img src="./assets/images/line-title-left.png" alt=""></span>
+                        รถใหม่
+                        <span><img src="./assets/images/line-title-right.png" alt=""></span>
+                    </h2>
                     <p>Welcome to Wish motors</p>
                 </div>
             </div>
@@ -556,23 +619,23 @@
                     <div class=" content">
                         <div class="content-title">MG 3 1.5 [X] โฉมปี (15-17)</div>
                         <div class="content-price">ราคา <span class="text-primary">375,000</span></div>
-                        <div class="content-time"><img src="./assets/images/icon-year.png" alt=""> ปี 2016</div>
+                        <div class="content-time"><img src="./assets/images/icon-time.png" alt=""> ปี 2016</div>
                     </div>
                 </a>
                 <a href="#" class="specials-slide-item">
                     <img src="./assets/images/MG3-yellow_.jpg" alt="" class="specials-slide-img">
                     <div class=" content">
                         <div class="content-title">MG 3 1.5 [X] โฉมปี (15-17)</div>
-                        <div class="content-price">ราคา <span class="text-primary">375,000</span></div>
-                        <div class="content-time"><img src="./assets/images/icon-year.png" alt=""> ปี 2016</div>
+                        <div class="content-price">ราคา <span class="text-primary">405,000</span></div>
+                        <div class="content-time"><img src="./assets/images/icon-time.png" alt=""> ปี 2018</div>
                     </div>
                 </a>
                 <a href="#" class="specials-slide-item">
                     <img src="./assets/images/MG5-black.jpg" alt="" class="specials-slide-img">
                     <div class=" content">
-                        <div class="content-title">MG 3 1.5 [X] โฉมปี (15-17)</div>
-                        <div class="content-price">ราคา <span class="text-primary">375,000</span></div>
-                        <div class="content-time"><img src="./assets/images/icon-year.png" alt=""> ปี 2016</div>
+                        <div class="content-title">MG 5 โฉมปี (16-18) 1.5 [X]</div>
+                        <div class="content-price">ราคา <span class="text-primary">499,000</span></div>
+                        <div class="content-time"><img src="./assets/images/icon-time.png" alt=""> ปี -</div>
                     </div>
                 </a>
                 <a href="#" class="specials-slide-item">
@@ -580,31 +643,38 @@
                     <div class=" content">
                         <div class="content-title">MG 3 1.5 [X] โฉมปี (15-17)</div>
                         <div class="content-price">ราคา <span class="text-primary">375,000</span></div>
-                        <div class="content-time"><img src="./assets/images/icon-year.png" alt=""> ปี 2016</div>
+                        <div class="content-time"><img src="./assets/images/icon-time.png" alt=""> ปี 2016</div>
                     </div>
                 </a>
                 <a href="#" class="specials-slide-item">
                     <img src="./assets/images/MG3-yellow_.jpg" alt="" class="specials-slide-img">
                     <div class=" content">
                         <div class="content-title">MG 3 1.5 [X] โฉมปี (15-17)</div>
-                        <div class="content-price">ราคา <span class="text-primary">375,000</span></div>
-                        <div class="content-time"><img src="./assets/images/icon-year.png" alt=""> ปี 2016</div>
+                        <div class="content-price">ราคา <span class="text-primary">405,000</span></div>
+                        <div class="content-time"><img src="./assets/images/icon-time.png" alt=""> ปี 2018</div>
                     </div>
                 </a>
                 <a href="#" class="specials-slide-item">
                     <img src="./assets/images/MG5-black.jpg" alt="" class="specials-slide-img">
                     <div class=" content">
-                        <div class="content-title">MG 3 1.5 [X] โฉมปี (15-17)</div>
-                        <div class="content-price">ราคา <span class="text-primary">375,000</span></div>
-                        <div class="content-time"><img src="./assets/images/icon-year.png" alt=""> ปี 2016</div>
+                        <div class="content-title">MG 5 โฉมปี (16-18) 1.5 [X]</div>
+                        <div class="content-price">ราคา <span class="text-primary">499,000</span></div>
+                        <div class="content-time"><img src="./assets/images/icon-time.png" alt=""> ปี -</div>
                     </div>
                 </a>
+            </div>
+            <div id="specialsSlideNav" class="slide-nav">
+                <div id="specialsSlideDots" class="slide-dots"></div>
             </div>
         </section>
         <section id="testimonial">
             <div class="container">
                 <div class="section-title ">
-                    <h2>ลูกค้าของเรา</h2>
+                    <h2>
+                        <span><img src="./assets/images/line-title-left.png" alt=""></span>
+                        ลูกค้าของเรา
+                        <span><img src="./assets/images/line-title-right.png" alt=""></span>
+                    </h2>
                     <p>thank you for choosing us</p>
                 </div>
                 <div class="row justify-content-center">
@@ -653,7 +723,11 @@
         <section id="news">
             <div class="container">
                 <div class="section-title ">
-                    <h2>ข่าวสารและกิจกรรม</h2>
+                    <h2>
+                        <span><img src="./assets/images/line-title-left.png" alt=""></span>
+                        ข่าวสารและกิจกรรม
+                        <span><img src="./assets/images/line-title-right.png" alt=""></span>
+                    </h2>
                     <p>please stay tuned for more updates from US</p>
                 </div>
                 <div class="row justify-content-center">
@@ -672,6 +746,14 @@
                                     ซูม ซันตาคลอสดีมานด์ซินโดรม คันยิพันธุวิศว
                                 </p>
                             </div>
+                            <div class="card-footer">
+                                <div class="card-date">
+                                    <img src="./assets/images/icon-time.png" alt="" class="img-fluid"> 13 MAY 2019
+                                </div>
+                                <div class="card-user">
+                                    <img src="./assets/images/icon-user.png" alt="" class="img-fluid"> BY ADMIN
+                                </div>
+                            </div>
                         </a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
@@ -689,6 +771,14 @@
                                     ซูม ซันตาคลอสดีมานด์ซินโดรม คันยิพันธุวิศว
                                 </p>
                             </div>
+                            <div class="card-footer">
+                                <div class="card-date">
+                                    <img src="./assets/images/icon-time.png" alt="" class="img-fluid"> 02 Feb 2019
+                                </div>
+                                <div class="card-user">
+                                    <img src="./assets/images/icon-user.png" alt="" class="img-fluid"> BY ADMIN
+                                </div>
+                            </div>
                         </a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
@@ -705,6 +795,14 @@
                                     สามแยกยากูซ่าช็อปซัมเมอร์ บราสตาร์ทไฟลท์
                                     ซูม ซันตาคลอสดีมานด์ซินโดรม คันยิพันธุวิศว
                                 </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-date">
+                                    <img src="./assets/images/icon-time.png" alt="" class="img-fluid"> 19 Nov 2019
+                                </div>
+                                <div class="card-user">
+                                    <img src="./assets/images/icon-user.png" alt="" class="img-fluid"> BY ADMIN
+                                </div>
                             </div>
                         </a>
                     </div>
