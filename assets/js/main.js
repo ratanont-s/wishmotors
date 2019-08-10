@@ -1,9 +1,9 @@
 $(function () {
     // Header
-    // $('header').sticky({
-    //     topSpacing: 0,
-    //     zIndex: 1020,
-    // });
+    $('.header-bottom').sticky({
+        topSpacing: 0,
+        zIndex: 1020,
+    });
 
     // Toggle menu
     $('.header-menu').hide();
