@@ -4,6 +4,10 @@ $(function () {
         topSpacing: 0,
         zIndex: 1020,
     });
+    if (window.innerWidth < 992) {
+        $(".header-bottom").unstick();
+        $("#header").addClass("sticky-top");
+    }
 
     // Toggle menu
     $('.header-menu').hide();
