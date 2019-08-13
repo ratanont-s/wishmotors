@@ -1,0 +1,24 @@
+.page-header {
+    background: url('../images/bg-page-header.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 50px 0;
+
+    .breadcrumb {
+        background-color: transparent;
+        margin-bottom: 0;
+        padding: 0;
+
+        &-item {
+            color: white;
+
+            a {
+                color: white;
+            }
+
+            +.breadcrumb-item:before {
+                color: white;
+            }
+        }
+    }
+}
