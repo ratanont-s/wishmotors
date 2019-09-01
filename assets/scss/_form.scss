@@ -62,3 +62,14 @@
         }
     }
 }
+
+.form-contact {
+    .form-control {
+        border-radius: 0;
+
+        &::placeholder {
+            color: #a8a8a8;
+            font-weight: 400;
+        }
+    }
+}
