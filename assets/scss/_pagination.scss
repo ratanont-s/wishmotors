@@ -1,0 +1,30 @@
+.pagination {
+    text-transform: uppercase;
+
+    .page {
+
+        &-item {
+            &.active {
+                .page-link {
+                    background-color: transparent;
+                    color: $primary;
+                }
+            }
+        }
+
+        &-link {
+            border-width: 0;
+            color: $body-color;
+            font-weight: 700;
+            font-size: small;
+
+        }
+
+        &-prev,
+        &-next {
+            color: $text-muted;
+            font-weight: 400;
+            letter-spacing: 11px;
+        }
+    }
+}

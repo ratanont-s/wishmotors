@@ -3,6 +3,10 @@ $primary:#ED1B24;
 $secondary:#cecece;
 $light:#F2F2F2;
 $dark:#040404;
+$placeholder:#989898;
+$line:#00c300;
+$facebook:#3b5998;
+$text-muted: #919191;
 
 // Button
 $btn-padding-x:1.25rem;
@@ -22,9 +26,6 @@ $enable-responsive-font-sizes: true;
 // Slick
 $slick-font-path: '../scss/slick/fonts/';
 $slick-loader-path: '../scss/slick/';
-
-// Body
-$body-bg:$light;
 
 // Link
 $link-hover-decoration:none;

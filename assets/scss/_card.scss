@@ -1,0 +1,136 @@
+.card-car {
+    position: relative;
+    border-radius: 0;
+    border-color: transparent;
+    border-width: 3px;
+    margin-bottom: 2rem;
+
+    @include hover-focus {
+        border-color: $primary;
+    }
+
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: $border-color;
+    }
+
+    .card {
+
+        &-img {
+
+            object-fit: cover;
+            border-radius: 0;
+            margin-bottom: .5rem;
+
+            @include media-breakpoint-up(lg) {
+                width: 255px;
+                margin-bottom: 0;
+            }
+        }
+
+        &-body {
+            color: $body-color;
+            padding: 0;
+
+            @include media-breakpoint-up(lg) {
+                padding-left: 1rem;
+            }
+        }
+
+        &-top {
+            display: flex;
+
+        }
+
+        &-title {
+            margin-bottom: 0;
+        }
+
+        &-price {
+            background-color: $primary;
+            color: $white;
+            width: 145px;
+            text-align: center;
+            padding: .25rem 0;
+            margin-left: auto;
+            margin-bottom: .5rem;
+
+            h5 {
+                margin-bottom: 0;
+            }
+        }
+
+        &-detail {
+            list-style: none;
+            padding-left: 0;
+            font-weight: 400;
+            font-size: small;
+            display: flex;
+            align-items: center;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 18px;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 18px;
+                    height: 18px;
+                    object-fit: contain;
+                    margin-right: 0.25rem;
+                }
+
+                &:not(:last-child) {
+                    margin-right: 1rem;
+
+                    @include media-breakpoint-up(lg) {
+                        margin-right: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card-search-car {
+    background-color: $dark;
+    border-radius: 0;
+    border-width: 0;
+
+    .card {
+        &-title {
+            color: $white;
+            text-align: center;
+            font-weight: 400;
+            margin-top: .5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .form-group {
+        label {
+            color: $primary;
+        }
+
+        .form-control {
+            background: #313131 url('../images/icons/chevron-down-white.png') no-repeat right .75rem center;
+            background-size: auto;
+            border-width: 0;
+            color: $white;
+            appearance: none;
+            font-size: 14px;
+        }
+    }
+}

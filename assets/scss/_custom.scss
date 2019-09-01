@@ -2,7 +2,9 @@
     background-color: $dark;
 
     .form-control {
-        background-color: rgba(white, .1);
+        background-color: #313131;
         border-width: 0;
+        color: white;
+        border-radius: 0;
     }
 }

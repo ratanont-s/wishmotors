@@ -1,0 +1,13 @@
+.badge-price {
+    border-radius: 13px;
+    background-color: $light;
+    font-size: 14px;
+    font-weight: 400;
+    padding: .5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+
+    img {
+        vertical-align: inherit;
+    }
+}
