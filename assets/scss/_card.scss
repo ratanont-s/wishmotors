@@ -134,3 +134,23 @@
         }
     }
 }
+
+.card-contact {
+    height: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    border-width: 0;
+    border-bottom: 5px solid $primary;
+    border-radius: 0;
+    font-weight: 400;
+
+    &.mg {
+        background: url('../images/bg/bg-mg.png') no-repeat right bottom;
+        background-size: auto 75%;
+    }
+
+    .card {
+        &-title {
+            color: $primary;
+        }
+    }
+}

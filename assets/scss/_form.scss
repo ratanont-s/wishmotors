@@ -34,3 +34,31 @@
         }
     }
 }
+
+.form-calc-finance {
+    background-color: $light;
+    padding: 1rem;
+
+    .title {
+        display: flex;
+        align-items: center;
+        color: $primary;
+        margin-bottom: 0.5rem;
+
+        span {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .form {
+        &-group {
+            label {
+                font-weight: 400;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

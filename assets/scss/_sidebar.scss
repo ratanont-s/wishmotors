@@ -1,0 +1,63 @@
+.sidebar-price {
+    background-color: $primary;
+    color: $white;
+    text-align: center;
+    padding: .5rem 0;
+
+    h2,
+    h5 {
+        margin-bottom: 0;
+    }
+
+    h5 {
+        font-weight: 300;
+    }
+}
+
+.sidebar-car-info {
+    background-color: $light;
+    padding: 1rem;
+
+    h4 {
+        color: $primary;
+        margin-bottom: .5rem;
+
+        small {
+            display: block;
+            color: $body-color;
+            font-size: small;
+            font-weight: 300;
+        }
+    }
+
+    .table {
+        margin-bottom: 0;
+
+        tbody {
+            tr {
+                &:first-child {
+
+                    td,
+                    th {
+                        border-top-width: 0;
+                    }
+                }
+
+                td,
+                th {
+                    font-size: small;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                td {
+                    color: $text-muted;
+                }
+
+                th {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
