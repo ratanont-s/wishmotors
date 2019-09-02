@@ -7,6 +7,24 @@
 
     @include hover-focus {
         border-color: $primary;
+        background-color: $primary;
+
+        .card {
+            &-body {
+                color: $white;
+            }
+
+            &-price {
+                background-color: $white;
+                color: $primary;
+            }
+
+            &-detail {
+                img {
+                    filter: invert(1);
+                }
+            }
+        }
     }
 
     @include media-breakpoint-up(lg) {
